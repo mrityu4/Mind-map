@@ -1,0 +1,193 @@
+.App{
+  .dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.react-flow__controls {
+  right: 15px;
+  left: unset;
+}
+
+.selected {
+  cursor: pointer;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  font-size: 12px;
+  background: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: initial;
+  flex-grow: 1;
+}
+
+.dndflow aside>div {
+  zoom: 2;
+}
+
+.dndflow aside .description {
+  font-size: 9px;
+  padding: 4px;
+  margin: 12px;
+  margin-bottom: 0;
+}
+
+aside .dndnode {
+  margin: 6.5px 8px;
+}
+
+.dndflow .dndnode {
+  height: 10px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  background-color: #eee;
+}
+
+.selected .dndnode {
+  cursor: auto;
+  resize: both;
+  overflow: auto;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  border-width: 2px;
+
+}
+
+.dndflow .dndnode.rectangle {
+  border-color: #0041d0;
+  background: #ea5e5e;
+}
+
+.dndflow .dndnode.heading {
+  border-color: #0041d0;
+  width: 60px;
+  background: #b3d3ff;
+
+}
+
+.dndflow .dndnode.text {
+  border-color: #0041d0;
+  height: 30px;
+  width: 50px;
+  background: #37f2d4;
+}
+
+.dndflow .dndnode.square {
+  border-color: #0041d0;
+  height: 40px;
+  width: 40px;
+  background: #aa5eea;
+}
+
+.dndflow .dndnode.circle {
+  border-color: #0041d0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgb(255, 103, 0);
+}
+
+.dndflow .reactflow-wrapper {
+  height: 100vh;
+  flex-grow: 1;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+.react-flow__handle-connecting.react-flow__handle-valid {
+  background: lightgreen;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+.drop-handle-target {
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  border: none;
+}
+
+.drop-handle-target.react-flow__handle-left {
+  left: -11px;
+
+}
+
+.drop-handle-target.react-flow__handle-right {
+  right: -11px;
+
+}
+
+aside .react-flow__handle {
+  display: none;
+}
+
+.source {
+  background: blue;
+}
+
+aside input {
+  pointer-events: none;
+}
+
+textarea {
+  resize: none;
+  font-size: 10px
+}
+
+.save__controls {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+  font-size: 12px;
+}
+
+.save__controls input {
+  display: none;
+}
+
+.save__controls img {
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 20%;
+}
+
+.save__controls button {
+  border: none;
+  background: none;
+}
+
+body {
+  margin: 0;
+}
+}
