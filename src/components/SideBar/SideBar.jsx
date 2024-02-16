@@ -111,7 +111,7 @@ export const Heading = memo(({ data }) => {
         className="dndnode heading"
         onDragStart={(event) => onDragStart(event, "Heading")}
         draggable
-        placeholder="Yo!"
+        placeholder="Enter Text"
         value={data.value}
       />
       <Handle
@@ -141,7 +141,7 @@ export const Text = memo(({ data }) => {
         className="dndnode text"
         onDragStart={(event) => onDragStart(event, "Text")}
         draggable
-        placeholder="Yo Boi!"
+        placeholder="Enter Text"
         rows="5"
         value={data.value}
       />
